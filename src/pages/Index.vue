@@ -10,27 +10,30 @@
         img-width="1024"
         img-height="480"
       >
-        <b-carousel-slide caption="First slide" img-src="../../uploads/DSC07238.png"></b-carousel-slide>
+        <b-carousel-slide
+          caption="First slide"
+          img-src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/q_auto:eco/v1575452945/greating/DSC07238.355099a6_fegbhp.webp"
+        ></b-carousel-slide>
       </b-carousel>
       <h2 class="my-4">Products</h2>
       <b-row>
         <b-col md="6" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/balcony.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/balcony.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Balcony</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/bench.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/bench.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Bench</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/bench.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/bench.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Bistro Set</div>
           </div>
         </b-col>
@@ -38,21 +41,21 @@
       <b-row>
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/chairs.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/chairs.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Chairs</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/dinning_set.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/dinning_set.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Dinning Sets</div>
           </div>
         </b-col>
 
         <b-col md="6" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/sofa.png" class="card-img-top" alt="..."  />
+            <img src="../../uploads/sofa.png" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Sofa</div>
           </div>
         </b-col>
@@ -63,8 +66,7 @@
 
 <script>
 export default {
-  metaInfo: {
-  }
+  metaInfo: {}
 };
 </script>
 
