@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'Green Patio',
+  siteName: 'Quang Dung & Green Patio Furniture',
   siteDescription: 'A furniture producer in Vietnam.',
   siteUrl: 'https://tndinhbao.github.io',
   plugins: [

@@ -64,7 +64,6 @@
 <script>
 export default {
   metaInfo: {
-    title: "Gridsome starter bootstrap"
   }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <footer class="page-footer font-small teal py-4">
     <div class="footer-copyright text-center">
-      QuangDung & GreenPatio Furniture
+      Quang Dung & Green Patio Furniture
     </div>
   </footer>
 </template>
