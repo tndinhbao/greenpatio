@@ -1,20 +1,32 @@
 <template>
-  <header class="header">
-    <b-navbar class="p-0" toggleable="md" type="light">
-        <b-navbar-brand>
-        <g-link class="logo-home logo-desktop" to="/">{{ $static.metadata.siteName }}</g-link>
-        <g-link class="logo-home logo–mobile" to="/"><img class="logo-image" alt="logo" src="../assets/images/logo.png"></g-link>
-      </b-navbar-brand>
-      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      <b-collapse is-nav id="nav_collapse">
-        <b-navbar-nav class="ml-auto">
-          <g-link class="nav--link" to="/about">About</g-link>
-          <g-link class="nav--link" to="/blog">Blog</g-link>
-          <g-link class="nav--link" to="/contact">Contact</g-link>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </header>
+  <b-container fluid>
+    <b-container>
+      <header class="header py-3">
+        <g-link class="logo-home" to="/">
+          <h4 class="brand-name text-dark font-weight-bold text-center">
+            QuangDung & GreenPatio
+            <br />
+            <small class="text-muted">Furniture</small>
+          </h4>
+        </g-link>
+      </header>
+    </b-container>
+    <div>
+      <b-nav align="center">
+        <b-nav-item active>Home</b-nav-item>
+        <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
+          <b-dropdown-item>Company History</b-dropdown-item>
+          <b-dropdown-item>Capacities</b-dropdown-item>
+          <b-dropdown-item>Leadership</b-dropdown-item>
+          <b-dropdown-item>Certificates</b-dropdown-item>
+        </b-nav-item-dropdown>
+        <b-nav-item>Products</b-nav-item>
+        <b-nav-item>Customers</b-nav-item>
+        <b-nav-item>Job opporturnities</b-nav-item>
+        <b-nav-item>Contact Us</b-nav-item>
+      </b-nav>
+    </div>
+  </b-container>
 </template>
 
 <static-query>
@@ -32,10 +44,8 @@ nav {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .logo-home {
@@ -45,10 +55,15 @@ nav {
   &:hover {
     text-decoration: none;
   }
+
+  & > .brand-name {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+  }
 }
 
 .logo-desktop {
-  @media(max-width: 419px) {
+  @media (max-width: 419px) {
     display: none;
   }
   @media (min-width: 420px) {
@@ -57,7 +72,7 @@ nav {
 }
 
 .logo–mobile {
-  @media(max-width: 419px) {
+  @media (max-width: 419px) {
     display: default;
   }
   @media (min-width: 420px) {
@@ -67,6 +82,14 @@ nav {
 
 .logo-image {
   width: 40px;
+}
+
+.nav-item > a {
+  color: #0d4680 !important;
+}
+
+.nav-item > a:hover {
+  color: #007bff !important;
 }
 
 .nav--link {

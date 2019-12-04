@@ -1,3 +1,9 @@
+$blue-dark: #0d4680 !default;
+
+$colors: (
+  "blue-dark": $blue-dark,
+);
+
 $theme-colors: (
   blue: #007bff,
   indigo: #6610f2,
@@ -13,7 +19,7 @@ $theme-colors: (
   gray: #6c757d,
   gray-dark: #343a40,
 
-  primary: #3BBA95,
+  primary: #007bff,
   secondary: #6c757d,
   success: #28a745,
   info: #17a2b8,
@@ -21,12 +27,4 @@ $theme-colors: (
   danger: #dc3545,
   light: #f8f9fa,
   dark: #343a40,
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 480px,
-  md: 640px,
-  lg: 992px,
-  xl: 1300px
 );

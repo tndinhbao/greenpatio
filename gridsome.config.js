@@ -1,7 +1,7 @@
 module.exports = {
-  siteName: 'Gridsome starter bootstrap',
-  siteDescription: 'A starter project for Gridsome with Bootstrap and some other useful tools.',
-  siteUrl: 'https://gridsome-starter-bootstrap.loke.dev',
+  siteName: 'Green Patio',
+  siteDescription: 'A furniture producer in Vietnam.',
+  siteUrl: 'https://tndinhbao.github.io',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -37,5 +37,26 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     port: 8080
+  },
+  chainWebpack: config => {
+    config.module
+      .rule('vue')
+      .use('vue-loader')
+      .loader('vue-loader')
+      .tap(options => {
+        options.transformAssetUrls = {
+          img: 'src',
+          image: 'xlink:href',
+          'b-img': 'src',
+          'b-img-lazy': ['src', 'blank-src'],
+          'b-card': 'img-src',
+          'b-card-img': 'src',
+          'b-card-img-lazy': ['src', 'blank-src'],
+          'b-carousel-slide': 'img-src',
+          'b-embed': 'src'
+        }
+
+        return options
+      })
   }
 }
