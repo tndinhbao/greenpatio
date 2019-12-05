@@ -10,15 +10,12 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: products
-  label: Products
+  path: about
+  label: About
   create: all
   match: "**/*"
   templates:
   - blog-post
-- type: document
-  path: about/**/*
-  label: About
 upload_dir: uploads
 public_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
 front_matter_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
