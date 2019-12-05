@@ -7,7 +7,6 @@ sections:
 - type: document
   path: introduction
   label: Introduction
-  match: "**/*"
 - type: directory
   path: products
   label: Products
