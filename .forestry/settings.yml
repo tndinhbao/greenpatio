@@ -16,7 +16,7 @@ sections:
   match: "**/*"
   templates:
   - introduction-post
-upload_dir: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
+upload_dir: posts
 public_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
 front_matter_path: ''
 use_front_matter_path: 
