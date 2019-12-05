@@ -4,10 +4,11 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: introduction/**/*
-  label: Introduction
-  read_only: false
+- type: directory
+  path: blog
+  label: Blog
+  create: all
+  match: "**/*"
 - type: directory
   path: products
   label: Products
@@ -15,11 +16,9 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-- type: directory
-  path: blog
-  label: Blog
-  create: all
-  match: "**/*"
+- type: document
+  path: introduction/**/*
+  label: Introduction
 upload_dir: uploads
 public_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
 front_matter_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
