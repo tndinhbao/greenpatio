@@ -17,8 +17,8 @@ sections:
   templates:
   - blog-post
 - type: document
-  path: introduction/**/*
-  label: Introduction
+  path: about/**/*
+  label: About
 upload_dir: uploads
 public_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
 front_matter_path: https://res.cloudinary.com/quangdungandgreenpatio/image/upload
