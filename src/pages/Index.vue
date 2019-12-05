@@ -12,28 +12,32 @@
       >
         <b-carousel-slide
           caption="First slide"
-          img-src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/q_auto:eco/v1575452945/greating/DSC07238.355099a6_fegbhp.webp"
+          :img-src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575452945/greating/DSC07238.355099a6_fegbhp.webp'"
         ></b-carousel-slide>
       </b-carousel>
       <h2 class="my-4">Products</h2>
       <b-row>
         <b-col md="6" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/balcony.png" class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518685/products/balcony_r9ud74.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Balcony</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/bench.png" class="card-img-top" alt="..." />
+            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518683/products/bench_sanmpp.png'" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Bench</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/bench.png" class="card-img-top" alt="..." />
+            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/bistro_set_gnj2s7.png'"  class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Bistro Set</div>
           </div>
         </b-col>
@@ -41,21 +45,21 @@
       <b-row>
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/chairs.png" class="card-img-top" alt="..." />
+            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/chairs_bzubi8.png'" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Chairs</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/dinning_set.png" class="card-img-top" alt="..." />
+            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518689/products/dinning_set_byv4ev.png'" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Dinning Sets</div>
           </div>
         </b-col>
 
         <b-col md="6" sm="12" class="py-1">
           <div class="card border-light">
-            <img src="../../uploads/sofa.png" class="card-img-top" alt="..." />
+            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518692/products/sofa_uceetu.png'" class="card-img-top" alt="..." />
             <div class="card-footer text-muted text-center">Sofa</div>
           </div>
         </b-col>
@@ -64,10 +68,16 @@
   </Layout>
 </template>
 
+<static-query>
+query {
+  metadata {
+    cloudinaryUrl
+  }
+}
+</static-query>
+
 <script>
-export default {
-  metaInfo: {}
-};
+export default {};
 </script>
 
 <style>
