@@ -43,6 +43,7 @@ export default {
     BlogContent,
   },
   metaInfo() {
+    console.log(this);
     return {
       title: this.$page.post.title,
     }

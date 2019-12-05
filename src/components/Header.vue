@@ -15,10 +15,9 @@
       <b-nav align="center">
         <b-nav-item active>Home</b-nav-item>
         <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
-          <b-dropdown-item>Company History</b-dropdown-item>
-          <b-dropdown-item>Capacities</b-dropdown-item>
-          <b-dropdown-item>Leadership</b-dropdown-item>
-          <b-dropdown-item>Certificates</b-dropdown-item>
+          <b-dropdown-item v-for="item in $static.posts.edges" :key="item.node.id">
+            <g-link :to="item.node.path">{{item.node.title}}</g-link>
+          </b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item>Products</b-nav-item>
         <b-nav-item>Customers</b-nav-item>
@@ -30,12 +29,26 @@
 </template>
 
 <static-query>
-query {
-  metadata {
-    siteName
+query allPost {
+  posts: allAboutPost {
+    edges {
+      node {
+        id
+        title
+        path
+      }
+    }
   }
 }
 </static-query>
+
+<script>
+export default {
+  created: function() {
+    console.log(this);
+  }
+};
+</script>
 
 <style lang="scss">
 nav {
