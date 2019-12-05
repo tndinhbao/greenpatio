@@ -1,5 +1,5 @@
 ---
-title: Company Histoy
+title: Company History
 
 ---
 Established in 2006
