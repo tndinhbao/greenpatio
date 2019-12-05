@@ -8,4 +8,4 @@ fields:
     required: false
   label: Title
 pages:
-- about/company-histoy.md
+- about/company-history.md
