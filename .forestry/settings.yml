@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: carousel/**/*
+  path: slides/**/*
   label: Slides
 - type: directory
   path: blog
