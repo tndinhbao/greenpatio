@@ -19,6 +19,16 @@ fields:
   label: Image Optimization
   description: Use cloudinary to get build this field
   default: q_auto:eco
+- name: order
+  type: number
+  description: The order shown on the carousel
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Order
 pages:
 - slides/slide2.md
 - slides/slide1.md
