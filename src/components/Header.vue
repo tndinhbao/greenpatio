@@ -13,16 +13,13 @@
     </b-container>
     <b-container fluid>
       <b-nav align="center">
-        <b-nav-item active>
-          <g-link to="/">Home</g-link>
-        </b-nav-item>
+        <b-nav-item to="/">Home</b-nav-item>
         <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
-          <b-dropdown-item>
-            <g-link to="/company-history">Company History</g-link>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <g-link to="/capacity">Capacity</g-link>
-          </b-dropdown-item>
+          <b-dropdown-item
+            v-for="item in $static.posts.edges"
+            :key="item.node.id"
+            :to="item.node.path"
+          >{{item.node.title}}</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item>Products</b-nav-item>
         <b-nav-item>Job opporturnities</b-nav-item>
