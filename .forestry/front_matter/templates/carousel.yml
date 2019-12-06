@@ -14,3 +14,4 @@ fields:
   label: Image
 pages:
 - slides/slide1.md
+- slides/slide2.md
