@@ -24,6 +24,14 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: "./slides",
+        path: '*.md',
+        typeName: 'SlidePost',
+      },
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-72659574-10'

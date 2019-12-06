@@ -11,8 +11,10 @@
         img-height="480"
       >
         <b-carousel-slide
-          caption="First slide"
-          :img-src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575452945/greating/DSC07238.355099a6_fegbhp.webp'"
+          v-for="slide in $page.slides.edges"
+          :key="slide.node.id"
+          :caption="slide.node.title"
+          :img-src="slide.node.image.replace($static.metadata.cloudinaryUrl, `${$static.metadata.cloudinaryUrl}/${slide.node.image_optimization}`)"
         ></b-carousel-slide>
       </b-carousel>
       <h2 class="my-4">Products</h2>
@@ -30,14 +32,22 @@
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518683/products/bench_sanmpp.png'" class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518683/products/bench_sanmpp.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Bench</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/bistro_set_gnj2s7.png'"  class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/bistro_set_gnj2s7.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Bistro Set</div>
           </div>
         </b-col>
@@ -45,21 +55,33 @@
       <b-row>
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/chairs_bzubi8.png'" class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/chairs_bzubi8.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Chairs</div>
           </div>
         </b-col>
 
         <b-col md="3" sm="12" class="py-1">
           <div class="card border-light">
-            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518689/products/dinning_set_byv4ev.png'" class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518689/products/dinning_set_byv4ev.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Dinning Sets</div>
           </div>
         </b-col>
 
         <b-col md="6" sm="12" class="py-1">
           <div class="card border-light">
-            <img :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518692/products/sofa_uceetu.png'" class="card-img-top" alt="..." />
+            <img
+              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518692/products/sofa_uceetu.png'"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-footer text-muted text-center">Sofa</div>
           </div>
         </b-col>
@@ -67,6 +89,24 @@
     </b-container>
   </Layout>
 </template>
+
+<page-query>
+query HomeData {
+  slides:allSlidePost(sort: {
+    by:"order",
+    order:ASC
+  }) {
+    edges {
+      node {
+        id
+        title
+        image
+        image_optimization
+      }
+    }
+  }
+}
+</page-query>
 
 <static-query>
 query {
