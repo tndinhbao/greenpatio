@@ -6,3 +6,5 @@ fields:
   type: image_gallery
   config: {}
   label: Choose images
+pages:
+- slides/slide1.md
