@@ -2,7 +2,6 @@ module.exports = {
   siteName: 'Quang Dung & Green Patio Furniture',
   siteDescription: 'A furniture producer in Vietnam.',
   siteUrl: 'http://quangdungfurniture.com',
-  pathPrefix: '/greenpatio',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
