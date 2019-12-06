@@ -2,9 +2,15 @@
 label: Carousel
 hide_body: true
 fields:
-- name: choose_images
-  type: image_gallery
-  config: {}
-  label: Choose images
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 pages:
 - slides/slide1.md
