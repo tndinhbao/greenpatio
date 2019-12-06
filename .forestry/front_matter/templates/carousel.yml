@@ -17,7 +17,8 @@ fields:
   config:
     required: false
   label: Image Optimization
-  description: 'for example: /q_auto:eco/'
+  description: Use cloudinary to get build this field
+  default: q_auto:eco
 pages:
 - slides/slide1.md
 - slides/slide2.md
