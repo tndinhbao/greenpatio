@@ -1,7 +1,8 @@
 module.exports = {
   siteName: 'Quang Dung & Green Patio Furniture',
   siteDescription: 'A furniture producer in Vietnam.',
-  siteUrl: 'https://tndinhbao.github.io',
+  siteUrl: 'http://quangdungfurniture.com',
+  pathPrefix: '/greenpatio',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -51,7 +52,6 @@ module.exports = {
     port: 8080
   },
   chainWebpack: config => {
-    config.mode("development");
     config.module
       .rule('vue')
       .use('vue-loader')
@@ -67,7 +67,6 @@ module.exports = {
           'b-embed': 'src'
         }
 
-        console.log(options);
         return options
       })
   }

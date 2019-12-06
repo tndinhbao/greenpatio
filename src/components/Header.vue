@@ -13,14 +13,16 @@
     </b-container>
     <div>
       <b-nav align="center">
-        <b-nav-item active>Home</b-nav-item>
+        <b-nav-item active> <g-link to="/">Home</g-link></b-nav-item>
         <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
           <b-dropdown-item v-for="item in $static.posts.edges" :key="item.node.id">
             <g-link :to="item.node.path">{{item.node.title}}</g-link>
           </b-dropdown-item>
         </b-nav-item-dropdown>
+        <!-- <b-nav-item>
+           <g-link to="/blog">Blog</g-link>
+        </b-nav-item> -->
         <b-nav-item>Products</b-nav-item>
-        <b-nav-item>Customers</b-nav-item>
         <b-nav-item>Job opporturnities</b-nav-item>
         <b-nav-item>Contact Us</b-nav-item>
       </b-nav>
@@ -41,14 +43,6 @@ query allPost {
   }
 }
 </static-query>
-
-<script>
-export default {
-  created: function() {
-    console.log(this);
-  }
-};
-</script>
 
 <style lang="scss">
 nav {
