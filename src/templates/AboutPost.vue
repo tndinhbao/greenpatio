@@ -2,7 +2,7 @@
   <Layout>
     <b-container>
       <div class="blogPost">
-        <h1 v-html="$page.post.title" class="mb-4" />
+        <div v-html="$page.post.title" class="h1 mb-4" />
         <BlogContent class="mt-5" :content="$page.post.content" />
       </div>
     </b-container>

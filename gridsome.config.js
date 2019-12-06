@@ -18,13 +18,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'about/**/*.md',
+        baseDir: "./about",
+        path: '*.md',
         typeName: 'AboutPost',
-        resolveAbsolutePaths: true,
-        remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-        },
       },
     },
     {

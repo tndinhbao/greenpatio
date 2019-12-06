@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <div>
     <b-container>
       <header class="header py-3">
         <g-link class="logo-home" to="/">
@@ -11,23 +11,22 @@
         </g-link>
       </header>
     </b-container>
-    <div>
+    <b-container fluid>
       <b-nav align="center">
-        <b-nav-item active> <g-link to="/">Home</g-link></b-nav-item>
+        <b-nav-item active>
+          <g-link to="/">Home</g-link>
+        </b-nav-item>
         <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
           <b-dropdown-item v-for="item in $static.posts.edges" :key="item.node.id">
             <g-link :to="item.node.path">{{item.node.title}}</g-link>
           </b-dropdown-item>
         </b-nav-item-dropdown>
-        <!-- <b-nav-item>
-           <g-link to="/blog">Blog</g-link>
-        </b-nav-item> -->
         <b-nav-item>Products</b-nav-item>
         <b-nav-item>Job opporturnities</b-nav-item>
         <b-nav-item>Contact Us</b-nav-item>
       </b-nav>
-    </div>
-  </b-container>
+    </b-container>
+  </div>
 </template>
 
 <static-query>
