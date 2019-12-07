@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'Quang Dung & Green Patio Furniture',
+  siteName: 'Quang Dung Furniture',
   siteDescription: 'A furniture producer in Vietnam.',
   siteUrl: 'http://quangdungfurniture.com',
   plugins: [

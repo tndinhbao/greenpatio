@@ -4,9 +4,7 @@
       <header class="header py-3">
         <g-link class="logo-home" to="/">
           <h4 class="brand-name text-dark font-weight-bold text-center">
-            Quang Dung & Green Patio
-            <br />
-            <small class="text-muted">Furniture</small>
+            Quang Dung <small class="text-muted">Furniture</small>
           </h4>
         </g-link>
       </header>

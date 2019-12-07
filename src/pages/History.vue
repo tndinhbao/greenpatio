@@ -16,7 +16,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Quang Dung & Green Patio Furniture"
+    title: "Quang Dung Furniture"
   }
 };
 </script>

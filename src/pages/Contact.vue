@@ -3,7 +3,7 @@
     <h1 class="mb-4">Contact</h1>
     <div>
       <img class="contact-image mb-4" src="../../uploads/email.svg" />
-      <b-form 
+      <b-form
         name="contact"
         method="post"
         @submit.prevent="handleSubmit"
@@ -61,7 +61,7 @@
 <script>
   export default {
     metaInfo: {
-      title: 'Quang Dung & Green Patio Furniture'
+      title: 'Quang Dung Furniture'
     },
     data() {
       return {
