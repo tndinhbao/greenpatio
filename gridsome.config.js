@@ -4,6 +4,9 @@ module.exports = {
   siteUrl: 'http://quangdungfurniture.com',
   plugins: [
     {
+      use: 'gridsome-plugin-typescript',
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
