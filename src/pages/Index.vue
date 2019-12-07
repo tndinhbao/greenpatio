@@ -14,7 +14,11 @@
           v-for="slide in $page.slides.edges"
           :key="slide.node.id"
           :caption="slide.node.title"
-          :img-src="slide.node.image.replace($static.metadata.cloudinaryUrl, `${$static.metadata.cloudinaryUrl}/${slide.node.image_optimization}`)"
+          :img-src="insertImageOptimization({
+                base: $static.metadata.cloudinaryUrl,
+                config: slide.node.image_optimization,
+                src: slide.node.image
+              })"
         ></b-carousel-slide>
       </b-carousel>
       <h2 class="my-4">Products</h2>
@@ -28,7 +32,11 @@
         >
           <div class="card border-light">
             <img
-              :src="cat.node.image.replace($static.metadata.cloudinaryUrl, `${$static.metadata.cloudinaryUrl}/${cat.node.imageOptimization}`)"
+              :src="insertImageOptimization({
+                base: $static.metadata.cloudinaryUrl,
+                config: cat.node.imageOptimization,
+                src: cat.node.image
+              })"
               class="card-img-top"
               :alt="cat.node.title"
             />
@@ -83,7 +91,12 @@ query {
 </static-query>
 
 <script>
-export default {};
+import { insertImageOptimization } from "../shared/helpers";
+export default {
+  methods: {
+    insertImageOptimization
+  }
+};
 </script>
 
 <style>
