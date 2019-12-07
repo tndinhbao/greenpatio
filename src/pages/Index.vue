@@ -19,70 +19,20 @@
       </b-carousel>
       <h2 class="my-4">Products</h2>
       <b-row>
-        <b-col md="6" sm="12" class="py-1">
+        <b-col
+          v-for="cat in $page.categories.edges"
+          :key="cat.node.id"
+          :md="cat.node.columnSize"
+          sm="12"
+          class="py-1"
+        >
           <div class="card border-light">
             <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518685/products/balcony_r9ud74.png'"
+              :src="cat.node.image.replace($static.metadata.cloudinaryUrl, `${$static.metadata.cloudinaryUrl}/${cat.node.imageOptimization}`)"
               class="card-img-top"
-              alt="..."
+              :alt="cat.node.title"
             />
-            <div class="card-footer text-muted text-center">Balcony</div>
-          </div>
-        </b-col>
-
-        <b-col md="3" sm="12" class="py-1">
-          <div class="card border-light">
-            <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518683/products/bench_sanmpp.png'"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-footer text-muted text-center">Bench</div>
-          </div>
-        </b-col>
-
-        <b-col md="3" sm="12" class="py-1">
-          <div class="card border-light">
-            <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/bistro_set_gnj2s7.png'"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-footer text-muted text-center">Bistro Set</div>
-          </div>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col md="3" sm="12" class="py-1">
-          <div class="card border-light">
-            <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518684/products/chairs_bzubi8.png'"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-footer text-muted text-center">Chairs</div>
-          </div>
-        </b-col>
-
-        <b-col md="3" sm="12" class="py-1">
-          <div class="card border-light">
-            <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518689/products/dinning_set_byv4ev.png'"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-footer text-muted text-center">Dinning Sets</div>
-          </div>
-        </b-col>
-
-        <b-col md="6" sm="12" class="py-1">
-          <div class="card border-light">
-            <img
-              :src="$static.metadata.cloudinaryUrl + '/q_auto:eco/v1575518692/products/sofa_uceetu.png'"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-footer text-muted text-center">Sofa</div>
+            <div class="card-footer text-muted text-center">{{cat.node.title}}</div>
           </div>
         </b-col>
       </b-row>
@@ -92,6 +42,22 @@
 
 <page-query>
 query HomeData {
+  categories: allProductCategory(sort: {
+    by:"order",
+    order:ASC
+  }) {
+    edges {
+      node {
+        id
+        title
+        image
+        order
+        columnSize
+        imageOptimization
+      }
+    }
+  }
+
   slides:allSlidePost(sort: {
     by:"order",
     order:ASC

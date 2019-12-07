@@ -32,6 +32,14 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: "./product_categories",
+        path: '*.md',
+        typeName: 'ProductCategory',
+      },
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-72659574-10'
