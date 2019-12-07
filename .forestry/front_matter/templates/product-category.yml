@@ -1,4 +1,31 @@
 ---
 label: Product Category
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+- name: order
+  type: number
+  label: Order
+  description: The order shown on the list
+  default: '1'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: imageOptimization
+  type: text
+  config:
+    required: false
+  label: Image Optimization
+  description: 'for example: q_auto:eco'
+  default: q_auto:eco
