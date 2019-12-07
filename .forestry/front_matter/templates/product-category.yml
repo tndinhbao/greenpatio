@@ -38,3 +38,4 @@ fields:
   default: q_auto:eco
 pages:
 - product_categories/balcony.md
+- product_categories/bench.md
