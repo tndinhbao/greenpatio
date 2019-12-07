@@ -38,7 +38,7 @@ fields:
   default: q_auto:eco
 pages:
 - product_categories/bench.md
-- product_categories/bistro-set.md
 - product_categories/sofa.md
+- product_categories/bistro-set.md
 - product_categories/chairs.md
 - product_categories/dinning-sets.md
