@@ -1,4 +1,24 @@
 ---
 label: Product
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: category
+  type: tag_list
+  default: []
+  label: Category
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
+- name: imageOptimization
+  type: text
+  config:
+    required: false
+  label: Image Optimization
+  default: q_auto:eco
+  description: 'for example: q_auto:eco'
