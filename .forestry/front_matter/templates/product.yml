@@ -23,4 +23,5 @@ fields:
   default: q_auto:eco
   description: 'for example: q_auto:eco'
 pages:
+- products/wooden-bench.md
 - products/wicker-cushion-wood-chair.md
