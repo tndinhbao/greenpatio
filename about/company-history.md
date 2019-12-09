@@ -2,7 +2,7 @@
 title: Company History
 
 ---
-### **![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575881149/posts/DSC_5466_fbohti.jpg)History**
+### **![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,w_1000,q_auto/v1575881149/posts/DSC_5466_fbohti.jpg)History**
 
 **In 2006:** Quang Dung Private Enterprise is established by General Director Mr. Le Van Nhiem under business license No. 4100601379 granted by Planning & Investment Department of Binh Dinh Province on 17 April 2006.
 
@@ -22,4 +22,4 @@ As the result of providing the best services and products, the company has been 
 
 For all the reasons above, please do not hesitate to contact the company for any inquiry you have.
 
-![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575881371/posts/ba7cb9a4408cb9d2e09d_xakubh.jpg)![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575537210/posts/responsive_zg6uhw.svg)
+![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,w_1000,q_auto/v1575881371/posts/ba7cb9a4408cb9d2e09d_xakubh.jpg)![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,w_1000,q_auto/v1575537210/posts/responsive_zg6uhw.svg)
