@@ -21,56 +21,18 @@
               })"
         ></b-carousel-slide>
       </b-carousel>
-      <h2 class="my-4">Products</h2>
-      <b-row>
-        <b-col
-          v-for="cat in $page.categories.edges"
-          :key="cat.node.id"
-          :md="cat.node.columnSize"
-          sm="12"
-          class="py-1"
-        >
-          <div class="card border-light h-100 text-white">
-            <img
-              :src="insertImageOptimization({
-                base: $static.metadata.cloudinaryUrl,
-                config: cat.node.imageOptimization,
-                src: cat.node.image
-              })"
-              class="card-img-top"
-              :alt="cat.node.title"
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">{{cat.node.title}}</h5>
-              <!-- <p
-                class="card-text"
-              >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p> -->
-            </div>
-            <!-- <div class="card-footer text-muted text-center">{{cat.node.title}}</div> -->
-          </div>
-        </b-col>
-      </b-row>
+      <h2 class="my-4">About us</h2>
+      <div v-html="content" />
     </b-container>
   </Layout>
 </template>
 
 <page-query>
 query HomeData {
-  categories: allProductCategory(sort: {
-    by:"order",
-    order:ASC
-  }) {
-    edges {
-      node {
-        id
-        title
-        image
-        order
-        columnSize
-        imageOptimization
-      }
-    }
+  aboutPost(path:"/company-history/") {
+    id
+    title
+    content
   }
 
   slides:allSlidePost(sort: {
@@ -100,6 +62,21 @@ query {
 <script>
 import { insertImageOptimization } from "../shared/helpers";
 export default {
+  data: function() {
+    return {
+      content: ""
+    };
+  },
+
+  mounted: function() {
+    if (this.$page.aboutPost && this.$page.aboutPost.content) {
+      this.content = this.$page.aboutPost.content.replace(
+        /<img/g,
+        "<img class='img-fluid'"
+      );
+    }
+  },
+
   methods: {
     insertImageOptimization
   }

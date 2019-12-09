@@ -12,16 +12,8 @@
     <b-container fluid>
       <b-nav align="center">
         <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item-dropdown text="Introduction" toggle-class="nav-link-custom" right>
-          <b-dropdown-item
-            v-for="item in $static.posts.edges"
-            :key="item.node.id"
-            :to="item.node.path"
-          >{{item.node.title}}</b-dropdown-item>
-        </b-nav-item-dropdown>
         <b-nav-item to="/products">Products</b-nav-item>
-        <b-nav-item>Job opporturnities</b-nav-item>
-        <b-nav-item>Contact Us</b-nav-item>
+        <b-nav-item to="/contact">Contact Us</b-nav-item>
       </b-nav>
     </b-container>
   </div>
