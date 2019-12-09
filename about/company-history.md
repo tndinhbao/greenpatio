@@ -2,7 +2,7 @@
 title: ''
 
 ---
-### Company history
+### **Company history**
 
 ### ![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575883878/posts/DSC_5492_2_igpa7x.jpg)
 
