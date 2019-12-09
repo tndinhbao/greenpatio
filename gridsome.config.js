@@ -43,6 +43,14 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: "./products",
+        path: '*.md',
+        typeName: 'Product',
+      },
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-72659574-10'

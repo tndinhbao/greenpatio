@@ -30,7 +30,7 @@
           sm="12"
           class="py-1"
         >
-          <div class="card border-light">
+          <div class="card border-light h-100 text-white">
             <img
               :src="insertImageOptimization({
                 base: $static.metadata.cloudinaryUrl,
@@ -40,7 +40,14 @@
               class="card-img-top"
               :alt="cat.node.title"
             />
-            <div class="card-footer text-muted text-center">{{cat.node.title}}</div>
+            <div class="card-img-overlay">
+              <h5 class="card-title">{{cat.node.title}}</h5>
+              <!-- <p
+                class="card-text"
+              >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p> -->
+            </div>
+            <!-- <div class="card-footer text-muted text-center">{{cat.node.title}}</div> -->
           </div>
         </b-col>
       </b-row>

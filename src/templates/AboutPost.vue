@@ -2,8 +2,7 @@
   <Layout>
     <b-container>
       <div class="blogPost">
-        <div v-html="$page.post.title" class="h1 mb-4" />
-        <BlogContent class="mt-5" :content="$page.post.content" />
+        <BlogContent :content="content" />
       </div>
     </b-container>
   </Layout>
@@ -25,10 +24,25 @@ export default {
   components: {
     BlogContent
   },
+  data: function() {
+    return {
+      content: ""
+    };
+  },
   metaInfo() {
     return {
       title: this.$page.post.title
     };
+  },
+  mounted: function() {
+    if (this.$page.post && this.$page.post.content) {
+      console.log(this.$page.post.content);
+      this.content = this.$page.post.content.replace(
+        /<img/g,
+        "<img class='img-fluid'"
+      );
+      console.log(this.content);
+    }
   }
 };
 </script>
