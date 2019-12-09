@@ -2,7 +2,7 @@
   <Layout>
     <b-container>
       <div class="blogPost">
-        <BlogContent :content="content" />
+        <div v-html="content" />
       </div>
     </b-container>
   </Layout>
@@ -18,12 +18,7 @@ query AboutPost ($path: String!) {
 </page-query>
 
 <script>
-import BlogContent from "@/components/BlogContent";
-
 export default {
-  components: {
-    BlogContent
-  },
   data: function() {
     return {
       content: ""
@@ -36,12 +31,10 @@ export default {
   },
   mounted: function() {
     if (this.$page.post && this.$page.post.content) {
-      console.log(this.$page.post.content);
       this.content = this.$page.post.content.replace(
         /<img/g,
         "<img class='img-fluid'"
       );
-      console.log(this.content);
     }
   }
 };

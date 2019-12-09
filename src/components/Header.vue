@@ -19,7 +19,7 @@
             :to="item.node.path"
           >{{item.node.title}}</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item>Products</b-nav-item>
+        <b-nav-item to="/products">Products</b-nav-item>
         <b-nav-item>Job opporturnities</b-nav-item>
         <b-nav-item>Contact Us</b-nav-item>
       </b-nav>
