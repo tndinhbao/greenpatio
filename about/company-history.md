@@ -2,7 +2,7 @@
 title: Company History
 
 ---
-### **Company history**
+### **About us**
 
 ### ![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575883878/posts/DSC_5492_2_igpa7x.jpg)
 
@@ -11,8 +11,6 @@ title: Company History
 **In 2017:** Change company type from Private Enterprise into Limited Company
 
 **In April - 2019:** established Green Patio Company - subsidiary of Quang Dung Ltd Co., which is specializing in iron and wicker furniture.
-
-### **About us**
 
 Quang Dung Limited Company and Green Patio Company is located at central of Binh Duong Industrial zone in Binh Duong Town, Phu My Ward, Binh Dinh Province,70 km from Quy Nhon port.
 
