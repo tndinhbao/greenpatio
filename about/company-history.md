@@ -2,9 +2,6 @@
 title: Company History
 
 ---
-
-### ![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575883878/posts/DSC_5492_2_igpa7x.jpg)
-
 ### **About us**
 
 **In 2006:** Quang Dung Private Enterprise is established by General Director Mr. Le Van Nhiem under business license No. 4100601379 granted by Planning & Investment Department of Binh Dinh Province on 17 April 2006.
@@ -12,6 +9,8 @@ title: Company History
 **In 2017:** Change company type from Private Enterprise into Limited Company
 
 **In April - 2019:** established Green Patio Company - subsidiary of Quang Dung Ltd Co., which is specializing in iron and wicker furniture.
+
+### ![](https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575883878/posts/DSC_5492_2_igpa7x.jpg)
 
 Quang Dung Limited Company and Green Patio Company is located at central of Binh Duong Industrial zone in Binh Duong Town, Phu My Ward, Binh Dinh Province,70 km from Quy Nhon port.
 
