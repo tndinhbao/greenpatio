@@ -2,8 +2,6 @@
 title: Company History
 
 ---
-### **About us**
-
 **In 2006:** Quang Dung Private Enterprise is established by General Director Mr. Le Van Nhiem under business license No. 4100601379 granted by Planning & Investment Department of Binh Dinh Province on 17 April 2006.
 
 **In 2017:** Change company type from Private Enterprise into Limited Company
