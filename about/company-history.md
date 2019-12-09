@@ -1,5 +1,5 @@
 ---
-title: ''
+title: Company History
 
 ---
 ### **Company history**
