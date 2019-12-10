@@ -23,5 +23,5 @@ fields:
   default: []
   label: Product Type
 pages:
-- products/wooden-bench.md
 - products/wicker-cushion-wood-chair.md
+- products/wooden-bench.md
