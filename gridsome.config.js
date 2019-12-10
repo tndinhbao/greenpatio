@@ -1,6 +1,7 @@
 module.exports = {
   siteName: 'Quang Dung Furniture',
-  siteDescription: 'A furniture producer in Vietnam.',
+  // siteDescription: 'A furniture producer in Vietnam.',
+  siteDescription: 'Quang Dung Ltd.Co, a Vietnam Exporter, Manufacturer exporting since 2006',
   siteUrl: 'http://quangdungfurniture.com',
   plugins: [
     {
