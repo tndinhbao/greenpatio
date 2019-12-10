@@ -1,5 +1,5 @@
 ---
-category: []
+category: product_categories/bench.md
 imageOptimization: q_auto:eco
 title: Wooden Bench
 images:
