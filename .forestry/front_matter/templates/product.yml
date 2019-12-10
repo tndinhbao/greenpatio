@@ -18,18 +18,6 @@ fields:
   label: Image Optimization
   default: q_auto:eco
   description: 'for example: q_auto:eco'
-- name: category
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: home-product-category
-      file: 
-      path: 
-  label: Category
 - name: product_type
   type: tag_list
   default: []
