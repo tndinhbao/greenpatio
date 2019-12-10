@@ -7,10 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: category
-  type: tag_list
-  default: []
-  label: Category
 - name: images
   type: image_gallery
   config: {}
@@ -22,6 +18,18 @@ fields:
   label: Image Optimization
   default: q_auto:eco
   description: 'for example: q_auto:eco'
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: home-product-category
+      file: 
+      path: 
+  label: Category
 pages:
 - products/wicker-cushion-wood-chair.md
 - products/wooden-bench.md
