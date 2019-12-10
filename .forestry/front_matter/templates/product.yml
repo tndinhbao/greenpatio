@@ -30,6 +30,10 @@ fields:
       file: 
       path: 
   label: Category
+- name: product_type
+  type: tag_list
+  default: []
+  label: Product Type
 pages:
 - products/wooden-bench.md
 - products/wicker-cushion-wood-chair.md
