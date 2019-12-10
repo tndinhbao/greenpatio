@@ -1,5 +1,5 @@
 ---
-category: []
+category: product_categories/chairs.md
 imageOptimization: q_auto:eco
 title: Wicker Cushion Wood Chair
 images:
