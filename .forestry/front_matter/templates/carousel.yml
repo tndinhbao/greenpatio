@@ -30,6 +30,6 @@ fields:
     step: 
   label: Order
 pages:
-- slides/slide-4.md
 - slides/slide2.md
 - slides/slide3.md
+- slides/slide-4.md
