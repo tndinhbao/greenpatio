@@ -11,19 +11,19 @@ const VueGoogleMaps = require('vue2-google-maps');
 
 const checkIfMobile = require('./mixins/checkIfMobile');
 
-const firebase = require("firebase");
-const firebaseConfig = {
-  apiKey: "AIzaSyBpz_b7hVwpDyNdnXRq2FPWQUHmn77lMjs",
-  authDomain: "quang-dung-furniture.firebaseapp.com",
-  databaseURL: "https://quang-dung-furniture.firebaseio.com",
-  projectId: "quang-dung-furniture",
-  storageBucket: "quang-dung-furniture.appspot.com",
-  messagingSenderId: "739393949560",
-  appId: "1:739393949560:web:c8ff1542e6416c2113028d",
-  measurementId: "G-ZNQ54WWRK8"
-};
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// const firebase = require("firebase");
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBpz_b7hVwpDyNdnXRq2FPWQUHmn77lMjs",
+//   authDomain: "quang-dung-furniture.firebaseapp.com",
+//   databaseURL: "https://quang-dung-furniture.firebaseio.com",
+//   projectId: "quang-dung-furniture",
+//   storageBucket: "quang-dung-furniture.appspot.com",
+//   messagingSenderId: "739393949560",
+//   appId: "1:739393949560:web:c8ff1542e6416c2113028d",
+//   measurementId: "G-ZNQ54WWRK8"
+// };
+// firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 const client: ClientApiConstructor = (Vue, { head }) => {
   Vue.use(BootstrapVue)

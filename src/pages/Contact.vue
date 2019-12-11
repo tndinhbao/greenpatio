@@ -7,7 +7,7 @@
           src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,q_auto,w_1000/v1576037366/posts/Add_a_subheading_l4wrjs.png"
         />
         <b-row class="mt-3">
-          <b-col sm="12" md="4">
+          <b-col sm="12">
             <GmapMap
               :center="{lat:14.2939482, lng:109.0897123}"
               :zoom="15"
@@ -41,7 +41,7 @@
               </dd>
             </dl>
           </b-col>
-          <b-col sm="12" md="8">
+          <!-- <b-col sm="12" md="8">
             <b-form
               name="contact"
               method="post"
@@ -90,7 +90,7 @@
 
               <b-button type="submit" variant="primary">Submit</b-button>
             </b-form>
-          </b-col>
+          </b-col> -->
         </b-row>
       </div>
     </b-container>
@@ -98,9 +98,6 @@
 </template>
 
 <script>
-const firebase = require("firebase");
-require("firebase/firestore");
-const db = firebase.firestore();
 export default {
   metaInfo: {
     title: "Quang Dung Furniture"
@@ -123,14 +120,14 @@ export default {
         .join("&");
     },
     handleSubmit(e) {
-      db.collection("contact_messages")
-        .add({
-          ...this.form
-        })
-        .then(docRef => {
-          this.$router.push("/success");
-        })
-        .catch(error => alert(error));
+      // db.collection("contact_messages")
+      //   .add({
+      //     ...this.form
+      //   })
+      //   .then(docRef => {
+      //     this.$router.push("/success");
+      //   })
+      //   .catch(error => alert(error));
     }
   }
 };
