@@ -6,16 +6,8 @@
           class="img-fluid"
           src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,q_auto,w_1000/v1576037366/posts/Add_a_subheading_l4wrjs.png"
         />
-        <b-row class="mt-3">
-          <b-col sm="12">
-            <GmapMap
-              :center="{lat:14.2939482, lng:109.0897123}"
-              :zoom="15"
-              map-type-id="terrain"
-              style="height: 300px"
-            >
-              <GmapMarker :position="{lat:14.2939482, lng:109.0897123}" />
-            </GmapMap>
+        <b-row>
+          <b-col sm="12" md="6">
             <dl class="row mt-3">
               <dt class="col-sm-3">Adress</dt>
               <dd
@@ -40,6 +32,17 @@
                 </dl>
               </dd>
             </dl>
+          </b-col>
+          <b-col sm="12" md="6">
+             <GmapMap
+              :center="{lat:14.2939482, lng:109.0897123}"
+              :zoom="15"
+              map-type-id="terrain"
+              style="height: 300px"
+              class="mt-3"
+            >
+              <GmapMarker :position="{lat:14.2939482, lng:109.0897123}" />
+            </GmapMap>
           </b-col>
           <!-- <b-col sm="12" md="8">
             <b-form
