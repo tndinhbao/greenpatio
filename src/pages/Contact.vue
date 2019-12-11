@@ -98,6 +98,9 @@
 </template>
 
 <script>
+const firebase = require("firebase");
+require("firebase/firestore");
+const db = firebase.firestore();
 export default {
   metaInfo: {
     title: "Quang Dung Furniture"
@@ -120,15 +123,13 @@ export default {
         .join("&");
     },
     handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
+      db.collection("contact_messages")
+        .add({
           ...this.form
         })
-      })
-        .then(() => this.$router.push("/success"))
+        .then(docRef => {
+          this.$router.push("/success");
+        })
         .catch(error => alert(error));
     }
   }
