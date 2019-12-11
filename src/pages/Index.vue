@@ -21,8 +21,50 @@
               })"
         ></b-carousel-slide>
       </b-carousel>
-      <h2 class="my-4">About us</h2>
-      <div v-html="content" />
+      <div class="divider mt-5" />
+      <b-row class="row-cols-2 row-cols-sm-1">
+        <b-col>
+          <h2 class="my-4">ABOUT US</h2>
+          <div v-html="content" />
+        </b-col>
+        <b-col>
+          <h2 class="my-4">Contact</h2>
+          <GmapMap
+            :center="{lat:14.2939482, lng:109.0897123}"
+            :zoom="15"
+            map-type-id="terrain"
+            style="height: 300px"
+          >
+            <GmapMarker :position="{lat:14.2939482, lng:109.0897123}" />
+          </GmapMap>
+          <dl class="row mt-3">
+            <dt class="col-sm-3">Adress</dt>
+            <dd
+              class="col-sm-9"
+            >Road 632, Duong Lieu Tay Commune, Binh Duong Industrial zone, Binh Duong ward, Phu My town, Binh Dinh province</dd>
+
+            <dt class="col-sm-3">Phone</dt>
+            <dd class="col-sm-9">(+84) 256 3758426</dd>
+
+            <dt class="col-sm-3">Fax</dt>
+            <dd class="col-sm-9">(+84) 256 3758427</dd>
+            <dt class="col-sm-3">Web</dt>
+            <dd class="col-sm-9"><a href="https://quangdungfurniture.com">quangdungfurniture.com</a></dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">
+              <dl class="row">
+                <dd class="col-sm-12">
+                  <a href="mailto:info@quangdungfurniture.com">info@quangdungfurniture.com</a>
+                </dd>
+                <dd class="col-sm-12">
+                  <a href="mailto:quangdung.co.ltd.vn@gmail.com">quangdung.co.ltd.vn@gmail.com</a>.
+                </dd>
+              </dl>
+            </dd>
+          </dl>
+        </b-col>
+      </b-row>
     </b-container>
   </Layout>
 </template>
@@ -90,5 +132,9 @@ export default {
   width: 90%;
   max-width: 500px;
   padding-bottom: 50px;
+}
+
+.divider {
+  border-bottom: 1px solid #0d4680;
 }
 </style>

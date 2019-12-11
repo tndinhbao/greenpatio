@@ -43,8 +43,8 @@ body {
 
 #content-wrapper {
   flex: 1 0 auto;
-  // max-width: 950px;
-  // width: 90vw;
-  // margin: 0 auto;
+  max-width: 950px;
+  width: 90vw;
+  margin: 0 auto;
 }
 </style>

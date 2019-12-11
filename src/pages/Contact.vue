@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <b-container>
-      <h3 class="mb-4">Contact</h3>
       <div>
-        <img class="img-fluid" src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,q_auto,w_1000/v1575690214/posts/1_fzpmzm.png" />
+        <img class="img-fluid" src="https://res.cloudinary.com/quangdungandgreenpatio/image/upload/c_scale,q_auto,w_1000/v1576037366/posts/Add_a_subheading_l4wrjs.png" />
         <b-form
+        class="mt-4"
           name="contact"
           method="post"
           @submit.prevent="handleSubmit"

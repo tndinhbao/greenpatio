@@ -38,8 +38,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: "./product_categories",
-        path: '*.md',
+        path: 'product_categories/**/*.md',
         typeName: 'ProductCategory',
       },
     },
