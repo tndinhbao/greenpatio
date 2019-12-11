@@ -15,7 +15,7 @@ const client: ClientApiConstructor = (Vue, { head }) => {
   Vue.use(BootstrapVue)
   Vue.use(VueGoogleMaps, {
     load: {
-      key: 'AIzaSyAZoPD_FXeLWQzAFZATh-dSiiQsbnV7-T0',
+      key: process.env.GRIDSOME_GG_API_KEY,
       // libraries: 'places', // This is required if you use the Autocomplete plugin
       // OR: libraries: 'places,drawing'
       // OR: libraries: 'places,drawing,visualization'
