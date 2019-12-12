@@ -2,7 +2,7 @@
 imageOptimization: q_auto:eco
 product_type:
 - chair
-title: Painted Ardirondack Chair (Blue)
+title: Painted Adirondack Chair (Blue)
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576076114/posts/DSC07615_rbnsme.png
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576076114/posts/DSC07610_v4dur2.png
