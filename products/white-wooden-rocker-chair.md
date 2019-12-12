@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- chair
 title: White wooden rocker chair
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576133684/posts/DSC07653_fkkhgj.png
