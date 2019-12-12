@@ -13,6 +13,7 @@
       <b-nav align="center">
         <b-nav-item to="/">Home</b-nav-item>
         <b-nav-item to="/products">Products</b-nav-item>
+        <b-nav-item to="/certificates">Certificates</b-nav-item>
         <b-nav-item to="/contact">Contact Us</b-nav-item>
       </b-nav>
     </b-container>
