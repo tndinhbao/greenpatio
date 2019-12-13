@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- chair
 title: Blue Wash Director Chair
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576206373/posts/20190608_093455_lqdqwx.jpg
