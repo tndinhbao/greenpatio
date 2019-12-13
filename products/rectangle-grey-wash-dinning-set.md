@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- dinning set
 title: 'Rectangle Grey Wash Dinning Set '
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576203398/posts/DSC07423_1_lcyees.png
