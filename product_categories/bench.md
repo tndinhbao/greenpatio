@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 1
 columnSize: "6"
 imageOptimization: q_auto:eco
 title: Bench
