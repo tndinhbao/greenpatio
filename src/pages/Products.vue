@@ -1,15 +1,21 @@
 <template>
   <Layout>
     <b-container>
-      <b-row>
-        <b-col
-          v-for="cat in $page.categories.edges"
-          :key="cat.node.id"
-          :md="cat.node.columnSize"
-          sm="12"
-          class="py-1"
-        >
-          <div class="card text-white bg-info h-100">
+      <h1>Categories</h1>
+      <!-- <b-row> -->
+      <!-- <b-col
+        v-for="cat in $page.categories.edges"
+        :key="cat.node.id"
+        :md="cat.node.columnSize"
+        sm="12"
+        class="py-1"
+      > -->
+        <div class="card-columns">
+          <div
+            class="card text-white bg-info"
+            v-for="cat in $page.categories.edges"
+            :key="cat.node.id"
+          >
             <img
               :src="insertImageOptimization({
                 base: $static.metadata.cloudinaryUrl,
@@ -23,8 +29,9 @@
               <g-link :to="cat.node.path" class="text-white">{{cat.node.title}}</g-link>
             </div>
           </div>
-        </b-col>
-      </b-row>
+        </div>
+      <!-- </b-col> -->
+      <!-- </b-row> -->
     </b-container>
   </Layout>
 </template>
