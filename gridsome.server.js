@@ -28,10 +28,17 @@ module.exports = function (api) {
       matched.map((p) => {
         const { id, title, product_type, imageOptimization, images } = p;
         // const found = viewProduct.findNode()
-        viewProduct.addNode({
-          id, title, product_type, imageOptimization, images,
-          tags: [path]
-        });
+
+        const found = viewProduct.getNodeById(id);
+        if (!found) {
+          viewProduct.addNode({
+            id, title, product_type, imageOptimization, images,
+            tags: [path]
+          });
+        } else {
+          // console.log(found);
+          found.tags.push(path);
+        }
       });
     });
     console.groupEnd();
