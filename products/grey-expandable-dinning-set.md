@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- dinning set
 title: Grey expandable dinning set
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579402165/posts/DSC_5574_xpljdf.jpg
