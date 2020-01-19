@@ -1,8 +1,8 @@
 ---
 order: 2
-columnSize: "3"
+columnSize: "6"
 imageOptimization: q_auto:eco
 title: Wicker
-image: https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1575812567/posts/DSC07344_eyuqrq.png
+image: https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579350554/posts/DSC_5567_1_ttorv9.jpg
 
 ---
