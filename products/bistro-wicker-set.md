@@ -1,8 +1,8 @@
 ---
 imageOptimization: q_auto:eco
 product_type:
-- bistro set
 - chair
+- Bistro Set
 title: Bistro wicker set
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579400841/posts/DSC_5596_rs1sph.jpg
