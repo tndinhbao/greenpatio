@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- wicker
 title: Wicker sunlouger
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579401422/posts/DSC_5623_rwejyi.jpg
