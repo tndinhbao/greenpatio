@@ -3,7 +3,7 @@ imageOptimization: q_auto:eco
 product_type:
 - chair
 - wicker
-title: Black and white wicker chair
+title: QDC1815-WB
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579400649/posts/DSC_5567_1_pfijpk.jpg
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579400649/posts/DSC_5566_1_fzoy8u.jpg
