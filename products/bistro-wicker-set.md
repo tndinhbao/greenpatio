@@ -3,7 +3,7 @@ imageOptimization: q_auto:eco
 product_type:
 - chair
 - Bistro Set
-title: Bistro wicker set
+title: QDC1815 + QDB1815
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579400841/posts/DSC_5596_rs1sph.jpg
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579400841/posts/DSC_5593_f0ivua.jpg
