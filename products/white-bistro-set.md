@@ -2,7 +2,7 @@
 imageOptimization: q_auto:eco
 product_type:
 - bistro set
-title: White Bistro Set
+title: QDSET206304-W
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576205767/posts/2c113a06dfc3269d7fd2_1_b6zyng.jpg
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576202705/posts/7ef4eaac0469fd37a478_kclj7m.jpg
