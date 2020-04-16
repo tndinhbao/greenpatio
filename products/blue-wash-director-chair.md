@@ -2,7 +2,7 @@
 imageOptimization: q_auto:eco
 product_type:
 - chair
-title: Blue Wash Director Chair
+title: QDC17080-WB
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576206373/posts/20190608_093455_lqdqwx.jpg
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576206365/posts/62197978_667850747012729_4117611668098252800_n_vq3bxt.jpg
