@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- chair
 title: William Wicker Rocking Chair
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1576133596/posts/DSC07843_eh7ban.png
