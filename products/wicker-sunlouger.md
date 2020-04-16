@@ -2,7 +2,7 @@
 imageOptimization: q_auto:eco
 product_type:
 - wicker
-title: Wicker sunlouger
+title: QDC1816-RP
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579401422/posts/DSC_5623_rwejyi.jpg
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1579401422/posts/DSC_5622_zqy0l0.jpg
