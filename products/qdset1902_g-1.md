@@ -1,6 +1,7 @@
 ---
 imageOptimization: q_auto:eco
-product_type: []
+product_type:
+- wicker
 title: QDSET1902_G
 images:
 - https://res.cloudinary.com/quangdungandgreenpatio/image/upload/v1594348005/posts/DSC_5746_h7nnxt.jpg
